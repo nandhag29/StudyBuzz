@@ -5,6 +5,7 @@ const VideoUpload = ({ onVideoSelected }) => {
 
   const handleVideoChange = (e) => {
     const file = e.target.files[0];
+    setSelectedVideo(file);
 
     if (file && file.type.includes('video')) {
       const videoUrl = URL.createObjectURL(file);
@@ -27,7 +28,7 @@ const VideoUpload = ({ onVideoSelected }) => {
       }
     <form action="http://localhost:5100/upload" enctype='multipart/form-data' method='POST'>
         <input type="file" name="file" />
-        <input type="submit" value="upload" />
+        <input type="submit" value="Upload" />
     </form>
       {selectedVideo && (
         <div>

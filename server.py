@@ -1,6 +1,8 @@
 # server.py
 from flask import request, make_response, Flask
 from flask import copy_current_request_context
+from studytext import summarizedtext
+
 import datetime
 import threading
 #from flask_cors import CORS
@@ -74,7 +76,7 @@ def upload():
         basepath = os.path.dirname(__file__) 
         upload_path = os.path.join(basepath, 'data',secure_filename(f.filename)) 
         f.save(upload_path)
-        closeAfterWrite()
+        # closeAfterWrite()
         print(datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S') + " write done")
     def passExit():
         pass
@@ -84,8 +86,9 @@ def upload():
         f.stream.close = passExit
         t = threading.Thread(target=save_file,args=(normalExit,))
         t.start()
-        return 'SUCCESS 1'
-    return 'SUCCESS 2'
+        return (summarizedtext[0]["summary_text"])
+
+    return (summarizedtext[0]["summary_text"])
 
 if __name__ == '__main__':
 

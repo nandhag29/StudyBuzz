@@ -1,6 +1,18 @@
 import os
 import whisper
+import torch
+from transformers import pipeline
 
+hf_name = 'pszemraj/led-large-book-summary'
+
+summarizedtext = ""
+
+
+summarizer = pipeline(
+    "summarization",
+    hf_name,
+    device=0 if torch.cuda.is_available() else -1,
+)
 
 data_folder = 'backend/data'  # Assuming your videos are stored in a folder named 'data'
 
@@ -21,4 +33,19 @@ else:
 model = whisper.load_model("base")
 
 result = model.transcribe(latest_video_path)
-print(result["text"])
+
+wall_of_text = result["text"]
+
+
+summarizedtext = summarizer(
+    wall_of_text,
+    min_length=16,
+    max_length=256,
+    no_repeat_ngram_size=3,
+    encoder_no_repeat_ngram_size=3,
+    repetition_penalty=3.5,
+    num_beams=4,
+    early_stopping=True,
+)
+
+print(summarizedtext)

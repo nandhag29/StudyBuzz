@@ -14,11 +14,18 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Video Upload and Processing</h1>
+      <img src = "src/assets/studybuzz.png" alt = "Bobby the Bee" style = {{width: '20%'}} />
+      <h1>StudyBuzz</h1>
       {!selectedVideo ? (
         <VideoUpload onVideoSelected={handleVideoSelected} />
       ) : (
-        <VideoProcessing videoUrl={selectedVideo} />
+        <div>
+          <VideoProcessing videoUrl={selectedVideo} />
+          <video width="400" controls>
+            <source src={selectedVideo} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
       )}
     </div>
   );
