@@ -25,3 +25,7 @@
    This will open a terminal that contains an access link to our webpage. The webpage retroactively updates with the code, so be careful and don't touch any files.
 
 7. Run server.py. This allows the local server to connect with the webpage and now the webpage is fully functional
+
+________
+
+IMPORTANT: If upload is showing previous video summary, please rerun studytext.py.
