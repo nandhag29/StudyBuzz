@@ -2,10 +2,10 @@
 
 1. This program enables the user to input an audio or video file and get an AI generated summary of the content provided. 
 
-2. In order to start the program, run a python3 virtual enviornment (such as VEEN) before running any files. Running 
+2. In order to start the program, run a python3 virtual enviornment (such as VENV) before running any files. Running 
    the program in a regular/local enviornment might cause program to crash unexpectedly.
 
-3. Make sure both Flask and Whisper are downloaded to the environnment. There are also some machine learning libraries necessary to run the AI model.
+3. Make sure both Flask and Whisper are downloaded to the environnment. There are also machine learning libraries necessary to run the AI model.
    Instructions for installing all are down below:
    Flask: https://www.geeksforgeeks.org/how-to-install-flask-in-windows/
    Whisper: https://github.com/openai/whisper/blob/main/README.md
