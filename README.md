@@ -3,12 +3,19 @@
 1. This program enables the user to input an audio or video file and get an AI generated summary of the content provided. 
 
 2.  Download Node.js & React.js.
+
    _Node.js:_ download the Current version with the latest features, not the recommended one
+   
    _React.js:_ run the following prompts in the Command Prompt -
+   
       **npm create vite@4.1.0** --> 'y' to proceed and create project name; select React framework and JavaScript variant
+      
       **cd (project app)** --> opens project in Command Prompt
+      
       **npm i** --> installs all required third party libraries
-      **code .** --> opens code in VSCode or preffered IDE
+      
+      **code .** --> opens code in VSCode or preferred IDE
+      
    _For VSCode users:_ download the extension "Prettier - Code Format" for formatting help
 
 3. In order to start the program, run a python3 virtual enviornment (such as VENV) before running any files. Running the program in a regular/local enviornment might cause program to crash unexpectedly.
