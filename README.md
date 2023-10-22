@@ -2,8 +2,8 @@
 
 1. This program enables the user to input an audio or video file and get an AI generated summary of the content provided. 
 
-2. In order to start the program, download Node.js React.js.
-3. Run a python3 virtual enviornment (such as VENV) before running any files. Running the program in a regular/local enviornment might cause program to crash unexpectedly.
+2.  Download Node.js React.js.
+3. In order to start the program, run a python3 virtual enviornment (such as VENV) before running any files. Running the program in a regular/local enviornment might cause program to crash unexpectedly.
 
 4. Make sure both Flask and Whisper are downloaded to the environnment. There are also machine learning libraries necessary to run the AI model.
    Instructions for installing all are down below:
