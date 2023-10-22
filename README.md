@@ -2,9 +2,10 @@
 
 1. This program enables the user to input an audio or video file and get an AI generated summary of the content provided. 
 
-2. In order to start the program, download React.js. Then, run a python3 virtual enviornment (such as VENV) before running any files. Running the program in a regular/local enviornment might cause program to crash unexpectedly.
+2. In order to start the program, download Node.js React.js.
+3. Run a python3 virtual enviornment (such as VENV) before running any files. Running the program in a regular/local enviornment might cause program to crash unexpectedly.
 
-3. Make sure both Flask and Whisper are downloaded to the environnment. There are also machine learning libraries necessary to run the AI model.
+4. Make sure both Flask and Whisper are downloaded to the environnment. There are also machine learning libraries necessary to run the AI model.
    Instructions for installing all are down below:
    
    Flask: https://www.geeksforgeeks.org/how-to-install-flask-in-windows/
@@ -23,8 +24,5 @@
 
    This will open a terminal that contains an access link to our webpage. The webpage retroactively updates with the code, so be careful and don't touch any files.
 
-7. Run server.py. This allows the local server to connect with the webpage and now the webpage is fully functional
-
-________
-
-IMPORTANT: If upload is showing previous video summary, please rerun studytext.py.
+7. Run server.py. This allows the local server to connect with the webpage and now the webpage is fully functional...
+If upload is showing previous video summary, please save server.py and reload your local webpage.
