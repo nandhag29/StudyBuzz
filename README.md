@@ -1,5 +1,6 @@
 # StudyBuzz
 Submitted to HackTX 2023
+
 Devpost Submission Link: https://devpost.com/software/studybuzz
 
 1. This program enables the user to input an audio or video file and get an AI generated summary of the content provided. 
